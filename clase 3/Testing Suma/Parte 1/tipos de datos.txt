@@ -1,0 +1,100 @@
+
+-- descargar paquete XAMPP apachefriends.org
+-- descargar Visual Studio Code (VSC)
+
+
+
+Tipo de datos
+
+Tipo de datos enteros
+
+Tipo de datos boolean       1 bit               8 bytes
+boolean     0 1     false   true
+
+MySQL       0 -> false         <>0 -> true
+
+1 byte - 8 bits
+        1
+        --------
+
+byte signed                 1 byte
+
+        |--------|--------|
+      -128       0       127
+
+
+byte unsigned               1 byte
+
+        |-----------------|
+        0                255
+
+short entero de 2 bytes signed o unsigned        65536
+
+medium int  entero de 3 bytes                   16m
+
+integer o entero de 4 bytes 32 bits             4.000 m 
+
+big int (long)  8 bytes 64 bits                 9 trillones 
+
+char ASCII          1 byte                      "Hola"      4 bytes
+
+char UNICODE        2 bytes                     "Hola"      8 bytes
+
+
+-- Tipo de datos de punto flotante
+
+-- Tipo de datos float          32 bits
+
+1/3             .3333333
+                --------
+
+10/3            3.333333
+                --------
+
+100/3           33.33333
+                --------
+
+-- Tipo de datos double         64 bits
+
+1/3             .333333333333333
+                ----------------
+
+10/3            3.33333333333333
+                ----------------
+
+100/3           33.3333333333333
+                ----------------
+
+-- Tipo de datos decimal    (E,D)
+                            99999999,99
+Precio decimal(8,2)         --------,--
+
+-- Cadena de texto
+
+-- cadena de texto fija     char
+
+nombre char(20)
+
+        |ANA                 |              20 bytes
+        |JUAN              	 |              20 bytes
+        |MAXIMILIANO         |              20 bytes
+                                Total:      60 bytes
+
+-- cadena de texto variable     varchar
+
+nombre varchar(20)
+
+        |ANA                 |               3 + 1 = 4 bytes          
+        |JUAN                |               4 + 1 = 5 bytes       
+        |MAXIMILIANO         |              11 + 1 =12 bytes
+                                Total:              23 bytes
+                            
+
+
+
+
+
+
+
+
+
