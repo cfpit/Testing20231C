@@ -1,0 +1,39 @@
+cfpit
+
+---------------------
+
+Para testear app de escritorio en Java
+(desktop app)
+	--> JDK: kit de desarrollo java
+		--> java.sun.com
+
+	--> IDE: entorno de desarrollo integrado
+		--> Apache Netbeans
+		--> Eclipse
+		--> Visual Studio Code
+		--> Intellij Idea J
+
+		--------------------------------
+
+		PascalCase --> nombre de las clases deben 
+				--> comenzar en mayuscula
+				--> sustantivo
+				--> singular
+
+
+	----------------------------------------------
+
+	jmeter
+	junit
+	selenium
+
+	-------------------------------
+
+	app web
+		--> front end
+			HTML: texto, imagenes, videos, audio
+			CSS: estilo
+			JAVASCRIPT: efectos
+
+		--> back end
+			java, php, node js, go, django(python)
