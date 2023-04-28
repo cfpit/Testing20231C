@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Los objetos JSON están rodeados por llaves {}.
+        Los objetos JSON se escriben en pares clave / valor.
+        
+        Las claves deben ser cadenas y los valores deben ser un tipo de datos JSON 
+        válido (cadena, número, objeto, matriz, booleano o nulo).
+
+        Las claves y los valores están separados por dos puntos.
+        Cada par clave / valor está separado por una coma.
+     -->
+     <h3> Acceda a un objeto JSON mediante la notación de puntos: </h3>
+    <p id="demo"></p>
+
+    <script>
+        var myObj, x;
+        myObj = {"nombre":"Juan", "edad":30, "auto":null};
+        x = myObj.nombre;
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+
+    <h3> Accede a un objeto JSON usando notación entre corchetes: </h3>
+    <p id="demo2"></p>
+
+    <script>
+        var myObj, x;
+        myObj = {"nombre":"Juan", "edad":30, "auto":null};
+        x = myObj["nombre"];
+        document.getElementById("demo2").innerHTML = x;
+    </script>
+
+
+    <h3> Cómo recorrer todas las propiedades en un objeto JSON. </h3>
+    <p id="demo3"></p>
+
+    <script>
+        var myObj, x;
+        myObj = {"nombre":"Juan", "edad":30, "auto":null};
+        for (x in myObj) 
+        {
+            document.getElementById("demo3").innerHTML += x + "<br>";
+        }
+    </script>
+
+    <h3>Use bracket notation to access the property values.</h3>
+    <p id="demo4"></p>
+
+    <script>
+        var myObj, x;
+        myObj = {"nombre":"Juan", "edad":30, "auto":null};
+        for (x in myObj) 
+        {
+            document.getElementById("demo4").innerHTML += myObj[x] + "<br>";
+        }
+    </script>
+
+    <h3> Cómo acceder a objetos JSON anidados. </h3>
+    <p id="demo5"></p>
+
+    <script>
+        var myObj = {
+                        "nombre":"Juan",
+                        "edad":30,
+                        "autos": 
+                        {
+                            "auto1":"Ford",
+                            "auto2":"BMW",
+                            "auto3":"Fiat"
+                        }
+                    }
+        
+        document.getElementById("demo5").innerHTML += myObj.autos.auto2 + "<br>"
+        //o tambien:
+        document.getElementById("demo5").innerHTML += myObj.autos["auto2"];
+    </script>
+
+    <h3> Cómo modificar valores en un objeto JSON. </h3>
+    <p id="demo6"></p>
+
+    <script>
+        var myObj, i, x = "";
+        myObj = 
+        {
+            "nombre":"Juan",
+            "edad":30,
+            "autos": 
+            {
+                "car1":"Ford",
+                "car2":"BMW",
+                "car3":"Fiat"
+            }
+        }
+
+        //aca modifico
+        myObj.autos.car2 = "Mercedes";
+        //variante
+        //myObj.cars["car2"] = "Mercedes";
+
+        for (i in myObj.autos) 
+        {
+            x += myObj.autos[i] + "<br>";
+        }
+
+        document.getElementById("demo6").innerHTML = x;
+    </script>
+
+    <h3> Cómo eliminar propiedades de un objeto JSON. </h3>
+    <p id="demo7"></p>
+
+    <script>
+        var myObj, i, x = "";
+        myObj = 
+        {
+            "nombre":"Juan",
+            "edad":30,
+            "autos": 
+            {
+                "auto1":"Ford",
+                "auto2":"BMW",
+                "auto3":"Fiat"
+            }
+        }
+        
+        delete myObj.autos.auto2;
+
+        for (i in myObj.autos) 
+        {
+            x += myObj.autos[i] + "<br>";
+        }
+
+        document.getElementById("demo7").innerHTML = x;
+    </script>
+
+</body>
+</html>

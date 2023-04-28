@@ -1,0 +1,9 @@
+{
+    "nombre":"Jose",
+    "edad":31,
+    "mascotas":[
+        { "animal":"perro", "nombre":"Fido" },
+        { "animal":"gato", "nombre":"Chatran" },
+        { "animal":"loro", "nombre":"Pepe" }
+    ]
+}

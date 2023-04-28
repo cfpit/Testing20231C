@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1)  JSON: J ava S cript O bject N otation.
+            JSON es una sintaxis para almacenar e intercambiar datos.
+            JSON es texto, escrito con notación de objetos JavaScript.
+
+        2)  Intercambio de datos
+            a)  Al intercambiar datos entre un navegador y un servidor, los datos solo 
+            pueden ser texto.
+            b)  JSON es texto y podemos convertir cualquier objeto JavaScript en JSON 
+            y enviar JSON al servidor.
+            c)  También podemos convertir cualquier JSON recibido del servidor en 
+            objetos JavaScript.
+            
+            De esta forma podemos trabajar con los datos como objetos JavaScript, sin 
+            complicados análisis ni traducciones.
+    -->
+
+
+    <h3> El Cliente (Navegador Web) recibe datos en formato JSON y lo convierte en un objeto JavaScript:</h3>
+
+    <p id="demo"></p>
+
+    <script>
+        var miJSON = '{"nombre":"Juan", "edad":25, "ciudad":"CABA"}';
+        var miObj = JSON.parse(miJSON);
+        document.getElementById("demo").innerHTML = miObj.nombre;
+    </script>
+</body>
+</html>

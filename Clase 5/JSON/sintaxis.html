@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3> Acceso a un objeto JavaScript: </h3>
+    <p id="demo"></p>
+
+    <script>
+        var myObj, x;
+        myObj = { nombre: "Juan", edad: 30, ciudad: "Mar del Plata" };
+        x = myObj.nombre;
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+
+    <h3> Acceso a un objeto JavaScript usando la notación entre corchetes: </h3>
+    <p id="demo2"></p>
+
+    <script>
+    var myObj, x;
+        myObj = { nombre: "Juan", edad: 30, ciudad: "Mar del Plata" };
+        x = myObj["nombre"];
+        document.getElementById("demo2").innerHTML = x;
+    </script>
+
+    <h3>Modificacion de un atributo de objeto JavaScript:</h3>
+    <p id="demo3"></p>
+
+    <script>
+        var myObj, x;
+        myObj = { nombre: "Juan", edad: 30, ciudad: "Mar del Plata" };
+        myObj.nombre = "Carlos";
+        document.getElementById("demo3").innerHTML = myObj.nombre;
+    </script>
+
+    <h3>Variante:</h3>
+    <p id="demo4"></p>
+
+    <script>
+        var myObj, x;
+        myObj = { nombre: "Juan", edad: 30, ciudad: "Mar del Plata" };
+        myObj["nombre"] = "Carlos";
+        document.getElementById("demo4").innerHTML = myObj.nombre;
+    </script>
+
+
+</body>
+</html>

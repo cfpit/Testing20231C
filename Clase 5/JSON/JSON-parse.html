@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Un uso común de JSON es intercambiar datos hacia / desde un servidor web.
+        
+        Al recibir datos de un servidor web, los datos siempre son una cadena.
+        
+        Analice los datos con JSON.parse()y los datos se convertirán en un objeto 
+        JavaScript.
+     -->
+     <h2> Crear objeto a partir de una cadena JSON </h2>
+
+    <p id="demo"></p>
+
+    <script>
+        var txt = '{"nombre":"Juan", "edad":30, "ciudad":"CABA"}'
+        var obj = JSON.parse(txt);
+        document.getElementById("demo").innerHTML = obj.nombre + ", " + obj.edad;
+    </script>
+
+
+    <h2> Obtener el contenido de un archivo. </h2>
+    <p> El contenido está escrito en formato JSON y se puede convertir fácilmente en 
+        un objeto JavaScript. </p>
+
+    <p id="demo2"></p>
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() 
+                                        {
+                                            if (this.readyState == 4 && this.status == 200) 
+                                            {
+                                                var miObj = JSON.parse(this.responseText);
+                                                document.getElementById("demo2").innerHTML = miObj.nombre;
+                                            }
+                                        };
+        xmlhttp.open("GET", "json_demo2.txt", true);
+        xmlhttp.send();
+    </script>
+
+
+    <h2> Contenido como array. </h2>
+    <p> El contenido escrito como un array JSON se convertirá en un array JavaScript. </p>
+
+    <p id="demo3"></p>
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            document.getElementById("demo3").innerHTML = myArr[0];
+            
+        }
+        };
+        xmlhttp.open("GET", "json_demo_array.txt", true);
+        xmlhttp.send();
+    </script>
+
+
+    <h2> Convierta una cadena en un objeto de fecha. </h2>
+    <p id="demo4"></p>
+
+    <script>
+        var text = '{"nombre":"Julio", "fechaNac":"1990-10-15", "ciudad":"CABA"}';
+        var obj = JSON.parse(text, function (clave, valor) {
+        if (clave == "fechaNac") {
+            return new Date(valor);
+        } else {
+            return valor;
+        }
+        });
+        document.getElementById("demo4").innerHTML = obj.nombre + ", " + obj.fechaNac; 
+    </script>
+
+</body>
+</html>

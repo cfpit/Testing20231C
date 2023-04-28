@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Un uso común de JSON es intercambiar datos hacia / desde un servidor web.
+        Al enviar datos a un servidor web, los datos deben ser una cadena.
+        Convierta un objeto JavaScript en una cadena con JSON.stringify().
+     -->
+     <h2> Cree una cadena JSON a partir de un objeto JavaScript. </h2>
+    <p id="demo"></p>
+
+    <script>
+        var obj = { nombre: "Juan", edad: 30, ciudad: "CABA" };
+        var myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+    </script>
+
+    <h2> Cree una cadena JSON a partir de un array de JavaScript. </h2>
+    <p id="demo2"></p>
+
+    <script>
+        var arr = [ "Juan", "Carlos", "Jose", "Maria" ];
+        var myJSON = JSON.stringify(arr);
+        document.getElementById("demo2").innerHTML = myJSON;
+    </script>
+
+</body>
+</html>
