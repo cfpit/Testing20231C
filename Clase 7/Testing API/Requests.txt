@@ -1,0 +1,15 @@
+Consultar todas las categorias
+http://localhost:3000/categoria/
+
+Consultar una categoria
+http://localhost:3000/categoria/10
+
+Agregar una categoria
+http://localhost:3000/categoria/
+
+Eliminar una categoria
+http://localhost:3000/categoria/17
+
+Testear Requests de las entidades Persona y Libro
+
+
