@@ -1,0 +1,113 @@
+1)Parados sobre la ruta de la carpeta del proyecto, creo un proyecto Node js
+
+npm init -y
+
+Con esto se genera el archivo package.json
+
+2)Luego genero las dependencias...primero el express
+
+npm i express
+
+3)Ahora para conectar MySQL con Express, instalo el paquete mysql
+
+npm i mysql
+
+4)Instalar cors, para que el servidor pida recursos a servidores externos
+npm i cors
+
+Haciendo un dir, vemos que se genero:
+package.json
+package-lock.json
+node_modules(carpeta q contiene toda la info de los paquetes instalados)
+
+
+5)Creo en el VSC el app.js
+
+6)Escribo el codigo del app.get
+
+7)Ejecuto la aplicacion
+node app
+
+Debe mostrar los mensajes:
+"Servidor escuchando en el puerto 3000"
+"Conexion con la base de datos mysql establecida"
+
+
+8)En el Postman elegir GET 	y localhost:3000/categoria -> apretar SEND
+
+Ver la respuesta del servidor en la parte inferior del Postman
+
+
+9)Para probar app.post con Postman
+En el Postman elegir POST y localhost:3000/categoria -> 
+y abajo Body, raw y JSON y escribir 
+insertar categoria
+
+
+
+        {
+            "id": 17,
+            "nombre": "MARKETING"
+        }
+    
+DELETE: Seleccionar delete y colocar localhost:3000/categoria/(el numero del id)
+
+post y put
+insertar persona y cambiar 
+{
+     "id":6,
+     "nombre":"Mirna",
+     "apellido":"Sanez",
+     "alias":"Mir",
+     "email": "mirna@gmail.com"
+
+
+}
+insertar libro:
+    {
+            "nombre": "El tunel",
+            "descripcion": "un libro de novela",
+            "categoria_id":10,
+            "persona_id":2 
+           
+            
+        }
+
+put modificar libro
+
+
+           
+           
+         {
+             "id":8,
+            "descripcion": "un libro de xxx"
+            
+          
+           
+            
+        }
+         
+          
+           
+            
+       
+
+devolver: 
+
+
+{
+      
+            "id": 5,
+            "persona_id": 5
+        
+}
+
+prestar:
+ejemplo: prestar 5 se presta el libro 5 a la persona 5
+
+{
+      
+            "id": 5,
+            "persona_id": 5
+        
+}

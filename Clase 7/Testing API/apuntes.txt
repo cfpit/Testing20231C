@@ -1,0 +1,13 @@
+API : interface programabe de la aplicacion
+
+	--> estructura de datos
+		--> JSON
+		--> XML
+	--> acciones(peticiones o requests) que se pueden ejercer sobre dicha estructura
+		--> GET: ej: pido un producto por mercado libre
+		--> POST: ej: subir una foto a IG
+		--> PUT: ej: cambiar foto de perfil en Facebook
+		--> DELETE: ej: eliminar un tweet
+
+		--> POSTMAN: 	permite simular peticiones al servidor
+						simula el frontend de una app web
