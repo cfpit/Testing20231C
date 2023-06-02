@@ -1,0 +1,23 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Producto A",
+        "brand": "Marca A",
+        "price": 10.99
+      },
+      {
+        "id": 2,
+        "name": "Producto B",
+        "brand": "Marca B",
+        "price": 20.99
+      },
+      {
+        "id": 3,
+        "name": "Producto C",
+        "brand": "Marca C",
+        "price": 30.99
+      }
+    ]
+  }
+  

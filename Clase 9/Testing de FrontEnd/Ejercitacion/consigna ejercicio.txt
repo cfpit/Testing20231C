@@ -1,0 +1,2 @@
+Crear dentro del directorio public un nuevo archivo llamado persons.json y escribir 3 objetos json de personas con atributos nombre, apellido y edad.
+
