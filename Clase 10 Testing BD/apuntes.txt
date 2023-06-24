@@ -1,0 +1,12 @@
+SQL: lenguaje estructurado de consultas
+	-- > DDL: lenguaje de definicion de datos
+		--> create, alter, drop
+		--> operan sobre bd, tablas, etc.
+		--> ej: create database negocio
+		--> ej: drop table clientes
+
+	-- > DML: lenguaje de manipulacion de datos
+		--> select, insert, update, delete
+		--> operan sobre los registros de las tablas
+		--> ej: select articulo, precio from productos
+		--> ej: delete from clientes where id = 40
