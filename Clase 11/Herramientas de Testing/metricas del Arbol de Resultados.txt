@@ -1,0 +1,7 @@
+En el árbol de resultados de JMeter, las métricas comunes que se utilizan para evaluar el rendimiento de las pruebas son el "Tiempo de carga" (Load Time), el "Tiempo de conexión" (Connect Time) y la "Latencia" (Latency). 
+
+Tiempo de carga (Load Time): El tiempo de carga es el tiempo total que tarda en completarse una solicitud (request) o transacción. Incluye el tiempo de conexión, el tiempo de respuesta del servidor y cualquier retraso adicional, como el tiempo de descarga de recursos adicionales (imágenes, scripts, etc.). El tiempo de carga es una métrica importante para evaluar el rendimiento general de una solicitud.
+
+Tiempo de conexión (Connect Time): El tiempo de conexión se refiere al tiempo que lleva establecer una conexión con el servidor. Incluye el tiempo necesario para establecer una conexión TCP/IP, realizar el handshake y establecer la comunicación inicial. El tiempo de conexión es relevante cuando se evalúa el rendimiento de aplicaciones que dependen de muchas conexiones simultáneas.
+
+Latencia (Latency): La latencia es el tiempo que tarda una solicitud en viajar desde el cliente hasta el servidor y regresar con la respuesta. Representa el tiempo de ida y vuelta de una solicitud y no incluye el tiempo de procesamiento en el servidor. La latencia se ve afectada principalmente por la distancia física entre el cliente y el servidor, así como por la calidad de la red. Una baja latencia indica una comunicación más rápida y eficiente.
