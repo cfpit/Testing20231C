@@ -1,0 +1,104 @@
+W3C Markup Validation 
+
+URI (Identificador uniforme de recursos):
+Un concepto más amplio que actúa como un identificador general de un recurso.
+Puede identificar recursos en diversos contextos, no sólo en Internet.
+Ejemplos de URI incluyen:
+urn:isbn:0-302-38467-X(identifica un libro por su número ISBN)
+mailto:jane.doe@example.com(identifica una dirección de correo electrónico)
+ftp://ftp.example.com/public/file.txt(identifica un archivo en un servidor FTP)
+
+URL (localizador uniforme de recursos):
+Un tipo específico de URI que se centra en localizar recursos en Internet .
+Proporciona la dirección (ubicación) de un recurso utilizando un formato específico: protocol://host/path/to/resource.
+Ejemplos de URL incluyen:
+https://www.google.com/search?q=URI+vs+URL(Página web)
+ftp://ftp.example.com/public/file.txt(también una URL, que especifica la ubicación en un servidor FTP)
+mailto:jane.doe@example.com(no una URL, sino una URI para una dirección de correo electrónico)
+En términos más simples:
+
+Pensemos en URI como una categoría general para todos los identificadores de recursos.
+URL es una subcategoría específica de URI que se ocupa específicamente de recursos web.
+
+
+
+WC3 Link Checker
+Accept-Language: Este es el nombre del encabezado HTTP que indica las preferencias de idioma del cliente.
+es-419: Este código representa el español latinoamericano.
+es;q=0.9: Este código representa el español general (sin especificación regional) con una calidad relativa de 0.9.
+
+
+
+El encabezado Referer (con una "r" mayúscula al final) en HTTP es un campo opcional que identifica la dirección URL de la página web anterior desde la cual se realizó la solicitud actual. Funciona de la siguiente manera:
+
+Cuando visitas una página web: El navegador envía una solicitud HTTP al servidor web para obtener la página.
+El encabezado Referer: Dentro de esta solicitud, el navegador puede incluir un encabezado Referer que especifica la URL de la página web anterior que te llevó a la página actual. Por ejemplo, si haces clic en un enlace en un artículo de noticias para ver un video, el encabezado Referer de la solicitud para el video podría contener la URL del artículo de noticias.
+Usos del encabezado Referer:
+
+Análisis web: Los servidores web pueden usar la información del encabezado Referer para rastrear de dónde proviene el tráfico de su sitio. Esto puede ayudarles a comprender cómo los usuarios encuentran su sitio y qué contenido les interesa.
+Publicidad dirigida: Algunos sitios web pueden usar la información del encabezado Referer para mostrar publicidad dirigida. Por ejemplo, si vienes de un sitio web de deportes, es posible que te muestren anuncios relacionados con el deporte.
+Prevención de enlaces rotos: Algunos servidores web pueden usar la información del encabezado Referer para verificar si un enlace en otra página web apunta a una página válida en su sitio.
+Privacidad y el encabezado Referer:
+
+Preocupaciones de privacidad: El encabezado Referer puede revelar información sobre tu historial de navegación. Algunos navegadores te permiten deshabilitar el envío del encabezado Referer por completo o configurarlo para que solo se envíe a sitios web del mismo dominio.
+
+
+
+PageSpeed Insights
+
+Cumulative Layout Shift (CLS): Desplazamiento acumulado de diseño 
+Mide la estabilidad visual de tu página web a medida que se carga.
+Un puntaje CLS alto indica que los elementos de tu página se mueven inesperadamente durante la carga, lo que puede ser frustrante para los usuarios.
+
+Interaction to Next Paint (INP): Interacción a la siguiente carga 
+Se centra en la capacidad de respuesta.
+Mide el tiempo que tarda el navegador en responder a la interacción de un usuario (como hacer clic en un botón) actualizando visualmente la página.
+Un puntaje INP bajo significa que la página se siente más rápida y responde mejor.
+
+Largest Contentful Paint (LCP): Carga del contenido más grande 
+Indica cuándo el elemento de contenido más grande (texto, imagen, video) de tu página ha terminado de cargarse.
+Un buen tiempo de LCP es crucial para que los usuarios perciban la página como de carga rápida.
+
+First Contentful Paint (FCP): Primera carga de contenido
+Marca el momento en que el primer fragmento de contenido (cualquier cosa visible) se renderiza en la página.
+Un FCP rápido brinda a los usuarios una sensación de progreso y reduce la sensación de una pantalla en blanco.
+
+First Input Delay (FID): Retraso de la primera interacción 
+Similar a INP, pero se centra en el tiempo que tarda el navegador en poder manejar una interacción del usuario después del renderizado inicial.
+Un puntaje FID bajo significa que la página se siente rápida e interactiva incluso si aún está cargando contenido en segundo plano.
+
+Time to First Byte (TTFB): Tiempo hasta el primer byte 
+Mide el tiempo que tarda el navegador en recibir el primer byte de datos del servidor después de solicitar una página web.
+Un TTFB bajo es crucial para un tiempo de carga percibido rápido de la página. Sin embargo, está influenciado por factores del lado del servidor que están fuera de tu control directo.
+
+
+
+
+
+WAVE Accessibility Tool 
+¿Qué son las etiquetas ARIA?
+
+Las etiquetas ARIA son atributos HTML que se agregan a los elementos web para proporcionar información adicional sobre su función y propósito. Esta información adicional es captada por las tecnologías de asistencia, como lectores de pantalla, para mejorar la comprensión y la interacción de los usuarios con discapacidades.
+
+Importancia de las etiquetas ARIA en el análisis de WAVE:
+
+WAVE, como herramienta de evaluación de accesibilidad web, analiza la presencia y el uso correcto de las etiquetas ARIA en el código HTML de una página web. Al hacerlo, WAVE puede identificar:
+
+Elementos web que podrían beneficiarse de etiquetas ARIA: WAVE puede detectar elementos que no son inherentemente accesibles y sugerir la implementación de etiquetas ARIA adecuadas para mejorar su accesibilidad.
+Uso incorrecto de etiquetas ARIA: WAVE puede identificar errores o inconsistencias en la implementación de las etiquetas ARIA, lo que podría afectar negativamente la experiencia de los usuarios con discapacidades.
+Elementos con etiquetas ARIA correctamente implementadas: WAVE puede reconocer y destacar los elementos que tienen etiquetas ARIA bien implementadas, lo que contribuye a una experiencia de usuario más accesible.
+Tipos de etiquetas ARIA:
+
+Existen diferentes tipos de etiquetas ARIA que se utilizan para diversos propósitos, como:
+
+Describir roles: role identifica el rol semántico de un elemento, como button, navigation, alertdialog, entre otros.
+Especificar estados: aria-pressed, aria-checked, aria-selected indican el estado actual de un elemento, como si está presionado, seleccionado o marcado.
+Proporcionar propiedades adicionales: aria-label, aria-labelledby, aria-describedby permiten agregar etiquetas descriptivas o asociar elementos con etiquetas existentes para mejorar la comprensión.
+Beneficios de usar etiquetas ARIA:
+
+Mayor accesibilidad: Las etiquetas ARIA ayudan a que los elementos web sean más accesibles para una amplia gama de usuarios, incluyendo aquellos con discapacidades visuales, auditivas o motoras.
+Mejor compatibilidad con tecnologías de asistencia: Las etiquetas ARIA proporcionan información que las tecnologías de asistencia, como lectores de pantalla, pueden interpretar y comunicar a los usuarios de manera efectiva.
+Experiencia de usuario más inclusiva: Al implementar etiquetas ARIA correctamente, se crea una experiencia web más inclusiva y equitativa para todos los usuarios.
+
+Ejemplo:
+<img src="sales-data.png" alt="Sales Data for 2023" aria-label="Line graph showing monthly sales figures for 2023. The trend indicates a steady increase in sales throughout the year." />
